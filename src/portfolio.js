@@ -37,9 +37,9 @@ const socialMediaLinks = {
   linkedin: "https://linkedin.com/in/suneetmahajan",
   gmail: "mahajan.suneet2002@gmail.com",
   gitlab: "",
-  facebook: "https://www.facebook.com/saad.pasta7",
+  facebook: "https://www.facebook.com/",
   medium: "https://medium.com/@suneet02",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  stackoverflow: "https://stackoverflow.com/",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
