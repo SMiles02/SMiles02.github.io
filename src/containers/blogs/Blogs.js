@@ -56,7 +56,18 @@ export default function Blogs() {
               isDark ? "dark-mode blog-subtitle" : "subTitle blog-subtitle"
             }
           >
-            {blogSection.subtitle}
+            {typeof blogSection.subtitle === "object" && blogSection.subtitle.url ? (
+              <a
+                href={blogSection.subtitle.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                {blogSection.subtitle.text}
+              </a>
+            ) : (
+              blogSection.subtitle
+            )}
           </p>
         </div>
         <div className="blog-main-div">

@@ -40,7 +40,7 @@ const greeting = {
 const socialMediaLinks = {
   github: "https://github.com/SMiles02",
   linkedin: "https://www.linkedin.com/in/suneetmahajan/",
-  medium: "https://medium.com/@suneet02",
+  // medium: "https://medium.com/@suneet02",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -123,6 +123,61 @@ https://fontawesome.com/icons?d=gallery */
   display: true // Set false to hide this section, defaults to true
 };
 
+// Work experience section
+
+const workExperiences = {
+  display: true, //Set it to true to show workExperiences Section
+  experience: [
+    {
+      role: "Engineer",
+      company: "Pika",
+      companylogo: require("./assets/images/pikaLogo.png"),
+      date: "October 2025 - present",
+      desc: "😶‍🌫️",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
+    },
+    {
+      role: "Research Intern",
+      company: "Huawei",
+      companylogo: require("./assets/images/huaweiLogo.png"),
+      date: "June 2022 - Sep 2022",
+      desc: "Developed and implemented novel heuristic algorithms which allowed internal routing engine's performance to be assessed, primarily using Rust.",
+    },
+    {
+      role: "Senior Mathematics Enrichment Tutor",
+      company: "Irish Maths Trust",
+      companylogo: require("./assets/images/uccLogo.png"),
+      date: "Jan 2022 - present",
+      desc: "Taught mathematics, particularly combinatorics and graph theory to highly talented secondary school students. Multiple of my students proceeded to be selected to represent Ireland at IMO/EGMO 2022-2025."
+    },
+    {
+      role: "Backend Engineering Intern",
+      company: "Homeplan",
+      companylogo: require("./assets/images/homeplanLogo.png"),
+      date: "April 2024 - August 2024",
+      desc: "Developed and implemented heuristic algorithms for internal analytics systems.",
+
+    },
+    {
+      role: "Software Engineer Intern",
+      company: "IBM",
+      companylogo: require("./assets/images/ibmLogo.png"),
+      date: "Feb 2017 – Mar 2017",
+      desc: "Handled work assignments alongside learning frameworks used by IBM SWEs, primarily using Go."
+    },
+    {
+      role: "Contest Coordinator",
+      company: "Codeforces",
+      companylogo: require("./assets/images/codeforcesSmallLogo.webp"),
+      date: "June 2021 – Feb 2025",
+      desc: "Authored & coordinated 10 contests on the online judge Codeforces, each with over 20,000 contestants."
+    }
+  ]
+};
+
 // Education Section
 
 const educationInfo = {
@@ -132,13 +187,22 @@ const educationInfo = {
       schoolName: "University College Cork",
       logo: require("./assets/images/uccLogo.png"),
       subHeader: "BSc Data Science & Analytics [First Class Honours]",
-      duration: "September 2021 - present",
+      duration: "September 2021 - June 2025",
       desc: "Cork, Ireland",
       descBullets: [
-        "Chess Team Captain",
-        "Data Science Society Events Officer",
-        "Badminton Team Events and Health & Safety Officer"
+        "UCC Sports Executive Member",
+        "Chess Club Captain",
+        "Data Science Society Vice-Chairperson",
+        "Indian Society Vice-Chairperson",
+        "Badminton Club Events and Health & Safety Officer"
       ]
+    },
+    {
+      schoolName: "University of Zagreb",
+      logo: require("./assets/images/uozLogo.png"),
+      subHeader: "UNIC Mathematics Summer School",
+      duration: "June 2024 - August 2024",
+      desc: "Zagreb, Croatia",
     },
     {
       schoolName: "Douglas Community School",
@@ -174,46 +238,6 @@ const techStack = {
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
-};
-
-// Work experience section
-
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "Research Intern",
-      company: "Huawei",
-      companylogo: require("./assets/images/huaweiLogo.png"),
-      date: "June 2022 - Sep 2022",
-      desc: "Developed and implemented heuristic algorithms which allowed internal routing engine's performance to be assessed, primarily using Rust.",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
-    },
-    {
-      role: "Mathematics Enrichment Tutor",
-      company: "University College Cork",
-      companylogo: require("./assets/images/uccLogo.png"),
-      date: "Jan 2022 - present",
-      desc: "Taught mathematics, particularly combinatorics and graph theory to highly talented secondary school students. Multiple of my students proceeded to be selected to represent Ireland at IMO/EGMO 2022/2023."
-    },
-    {
-      role: "Software Engineer Work Experience Intern",
-      company: "IBM",
-      companylogo: require("./assets/images/ibmLogo.png"),
-      date: "Feb 2017 – Mar 2017",
-      desc: "Handled work assignments alongside learning frameworks used by IBM SWEs, primarily using Go."
-    },
-    {
-      role: "Problemsetter",
-      company: "Codeforces",
-      companylogo: require("./assets/images/codeforcesSmallLogo.webp"),
-      date: "June 2021 – present",
-      desc: "Authored 5 contests on the online judge Codeforces, each with over 20,000 contestants."
-    }
-  ]
 };
 
 /* Your Open Source Section to View Your Github Pinned Projects
@@ -280,15 +304,15 @@ const achievementSection = {
       ]
     },
     {
-      title: "IrlCPC 2023 Winner",
+      title: "IrlCPC 2025 Winner",
       subtitle:
-        "Team member of the winning team 'BigBoggerBoys3:BugabooBusters'.",
+        "Team member of the winning team 'View From The Top'.",
       image: require("./assets/images/acmLogo.png"),
       imageAlt: "IrlCPC Student Chapter Logo",
       footerLink: [
         {
           name: "Winning Announcement",
-          url: "https://www.insight-centre.org/team-bigboggerboys3-win-gold-at-the-irish-collegiate-programming-competition-2023/"
+          url: "https://www.insight-centre.org/acm-irish-collegiate-programming-competition/"
         }
       ]
     },
@@ -353,7 +377,7 @@ const problemSolving = {
       image: require("./assets/images/codeforcesLogo.png"),
       projectName: "Codeforces Master",
       projectDesc:
-        "Highest Rating: 2197,  Top 1 percent among 600,000+ users",
+        "Highest Rating: 2200,  Top 1 percent among 600,000+ users",
       footerLink: [
         {
           name: "ScarletS",
@@ -394,15 +418,29 @@ const problemSolving = {
 
 const blogSection = {
   title: "Blogs",
-  subtitle:
-    "I write from time to time! Big things coming soon!",
+  subtitle: {
+    text: "Click here to see all my blogposts!", // Custom text for the link
+    url: "https://blog.suneetmahajan.com/"
+  },
   displayMediumBlogs: "false", // Set true to display fetched medium blogs instead of hardcoded ones
   blogs: [
     {
-      url: "https://codeforces.com/blog/entry/106407",
-      title: "[Tutorial] Amogus Trick",
+      url: "https://blog.suneetmahajan.com/posts/optimal-control/",
+      title: "Optimal Control & Backpropagation",
       description:
-        "A guide on using the self-named Amogus Trick in competitive programming."
+        "My undergraduate thesis on optimal control and backpropagation."
+    },
+    {
+      url: "https://blog.suneetmahajan.com/posts/prime-cicadas/",
+      title: "Are You Worse at Maths than a Cicada?",
+      description:
+        "A lighthearted investigation into the mathematical properties of prime-numbered cicadas."
+    },
+    {
+      url: "https://blog.suneetmahajan.com/posts/amogus-trick/",
+      title: "Amogus Trick",
+      description:
+        "A self-named method to determine whether a binary system consisting of equations of the form xi = yi and xi =/= yi is solvable in O(α(n) + m) time and O(n) memory, along with its applications in theoretical computer science problems"
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -445,7 +483,7 @@ const contactInfo = {
   subtitle:
     "I won't bite, I promise!",
 //  number: "",
-  email_address: "mahajan.suneet2002 <at> gmail <dot> com"
+  email_address: "suneetmahajan5 <at> gmail <dot> com"
 };
 
 // Twitter Section
@@ -463,9 +501,9 @@ export {
   socialMediaLinks,
   splashScreen,
   skillsSection,
-  educationInfo,
   techStack,
   workExperiences,
+  educationInfo,
   openSource,
   bigProjects,
   achievementSection,
